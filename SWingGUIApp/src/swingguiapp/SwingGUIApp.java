@@ -1,21 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package swingguiapp;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 /**
  *
- * @author tayyab
+ * @author Muhammad Tayyab Sheikh <cstayyab@gmail.com>
+ * @version 3.0
  */
-public class SwingGUIApp {
+public class SwingGUIApp implements ActionListener {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        JFrame myWindow = new JFrame("This is the title of JFrame");
+        myWindow.setSize(600, 400);
+        myWindow.setVisible(true);
+        FlowLayout myLayout = new FlowLayout();
+        Container myContentPane = myWindow.getContentPane();
+        myContentPane.setLayout(myLayout);
+        JButton button1 = new JButton("Button 1");
+        myContentPane.add(button1);
+        JButton button2 = new JButton("Button 2");
+        myContentPane.add(button2);
+        JButton button3 = new JButton("Button 3");
+        myContentPane.add(button3);
+        button1.setActionCommand("Button1");
+
     }
-    
+
+    public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equalsIgnoreCase("Button1")) {
+
+        }
+    }
 }
