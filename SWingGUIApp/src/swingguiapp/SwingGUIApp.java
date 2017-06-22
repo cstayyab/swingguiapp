@@ -25,6 +25,8 @@ public class SwingGUIApp implements ActionListener {
         JButton button3 = new JButton("Button 3");
         myContentPane.add(button3);
         button1.setActionCommand("Button1");
+        button2.setActionCommand("Button2");
+        button3.setActionCommand("Button3");
 
     }
 
