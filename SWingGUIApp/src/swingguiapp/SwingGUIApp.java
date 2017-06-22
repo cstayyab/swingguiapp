@@ -9,7 +9,7 @@ package swingguiapp;
  *
  * @author tayyab
  */
-public class SWingGUIApp {
+public class SwingGUIApp {
 
     /**
      * @param args the command line arguments
